@@ -19,11 +19,11 @@
             @csrf
             @method('PUT')
             <div class="form-group">
-              <label for="title"></label>
+              <label for="title">Title</label>
               <input type="text" name="title" id="title" class="form-control" value="{{$post->title}}">
             </div>
             <div class="form-group">
-              <label for="body"></label>
+              <label for="body">Body</label>
               <input type="text" name="body" id="body" class="form-control" rows="3" value="{{$post->body}}">
               <button type="submit" class="btn btn-primary">Submit</button>
             </div>

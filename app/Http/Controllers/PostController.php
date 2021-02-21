@@ -43,7 +43,7 @@ class PostController extends Controller
 
         $post->save();
 
-        return redirect()->route('route.index');
+        return redirect()->route('posts.index');
     }
 
     /**
@@ -77,7 +77,11 @@ class PostController extends Controller
      */
     public function update(Request $request, Post $post)
     {
-        $post->update= ($request->all());
+        // $post->update= ($request->all());
+        $data= $request->all();
+        $post-> update($data);
+
+        return redirect()->route('post.index');
     }
 
     /**
