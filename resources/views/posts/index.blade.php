@@ -31,7 +31,7 @@
                 <td>{{$value->title}}</td>
                 <td>{{$value->body}}</td>
                 <td>
-                    <a href="">View</a>
+                    <a href="{{ route('posts.show', ['post' => $value->id]) }}">View</a>
                     <a href="">Edit</a>
                     <a href="">Delete</a>
                 </td>
