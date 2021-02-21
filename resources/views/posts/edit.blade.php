@@ -24,9 +24,9 @@
             </div>
             <div class="form-group">
               <label for="body">Body</label>
-              <input type="text" name="body" id="body" class="form-control" rows="3" value="{{$post->body}}">
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <textarea name="body" id="body" class="form-control" rows="3">{{$post->body}}</textarea>
             </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
         </form>
  
     </body>
