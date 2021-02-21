@@ -32,7 +32,7 @@
                 <td>{{$value->body}}</td>
                 <td>
                     <a href="{{ route('posts.show', ['post' => $value->id]) }}">View</a>
-                    <a href="">Edit</a>
+                    <a href="{{ route('posts.edit', ['post' => $value->id]) }}">Edit</a>
                     <a href="">Delete</a>
                 </td>
             </tr>
